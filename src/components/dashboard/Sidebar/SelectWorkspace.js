@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { workspaceNameSplit, firstTwoLetter } from "./../../../utils/function";
 import ReactTooltip from "react-tooltip";
@@ -10,7 +11,7 @@ const SelectWorkspace = props => {
           <a
             //  className="btn btn-default"
             onClick={() => props.callWorkspace(props.item.id)}
-            href={`/workspace/${props.item.id}/dashboard`}
+            href=""
             title={workspaceNameSplit(props.workspaceName)}
             data-tip data-for="wname"
           >
@@ -31,7 +32,7 @@ const SelectWorkspace = props => {
           <a
             // className="btn btn-default"
             onClick={() => props.callWorkspace(props.item.id)}
-            href={`/workspace/${props.item.id}/dashboard`}
+            href=""
             title={workspaceNameSplit(props.item.name)}
           >
             {firstTwoLetter(props.item.name)}
