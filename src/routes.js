@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Switch, Redirect } from "react-router-dom";
+import { HashRouter, Route, Switch, Redirect } from "react-router-dom";
 import Login from "./containers/Login";
 import SignUp from "./containers/Signup";
 import Landing from "./containers/Landing";
@@ -91,7 +91,7 @@ class Routes extends Component {
     } else {
       return (
         <div>
-          <main>
+          <HashRouter>
             <Switch>
               {}
               {this.Routes.map((route, i) => (
@@ -106,7 +106,7 @@ class Routes extends Component {
               ))}
               <Route />
             </Switch>
-          </main>
+          </HashRouter>
         </div>
       );
     }
