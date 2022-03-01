@@ -240,7 +240,7 @@ class Header extends Component {
               </button>
               <a
                 className="navbar-brand logo"
-                href={`/workspace/${getWorkspaceId()}/dashboard`}
+                href={`#/workspace/${getWorkspaceId()}/dashboard`}
               >
                 <img src={logo} alt="Logo" className="img-responsive image" />
               </a>
@@ -414,7 +414,7 @@ class Header extends Component {
                       </div>
                       <Dropdown.Item
                         className="workspace-setting"
-                        href={`settings`}
+                        href={`#/workspace/${getWorkspaceId()}/settings`}
                       >
                         <img
                           alt={"settings"}
